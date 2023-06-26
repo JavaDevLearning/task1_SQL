@@ -1,3 +1,3 @@
-select* from netology.persons
-where age > 27
-order by age desc;
+select product_name from netology.orders
+join netology.customers ON netology.orders.customers_id = netology.customers.id
+where name ILIKE 'alexey';
